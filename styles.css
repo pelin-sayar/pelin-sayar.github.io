@@ -2,6 +2,11 @@ head{
     background-color: black;
 }
 
-body{
-    color: #707b6d;
+.leaf-corner{
+    background-color: #707b6d;
+    color: #dac2bc;
+    border-radius: 15px 50px;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
 }
