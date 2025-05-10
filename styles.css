@@ -19,5 +19,7 @@ body{
     top: 0;
     border-bottom: 3px solid #8c996e;
     padding:30px;
+    margin-left: -1px;
+    margin-right: -1px;
     background-color: #f7f1e9;
 }
