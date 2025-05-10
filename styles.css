@@ -11,6 +11,7 @@ body{
     text-align: center;
     color:#f7f1e9;
     display: inline-block;
+    display:flex;
 }
 
 .navbar{
@@ -42,18 +43,40 @@ body{
 }
 
 .cat-pic{
-    /*position: absolute;*/
+    position: absolute;
     border-bottom: 3px solid #8c996e;
     margin-left: -8px;
     margin-right:-10px;
-    width: 1278.5px;
-    z-index: -1;;
+    width: 100vw;
+}
+
+.stars{
+    position: absolute;
+    top: 20px;
+    left:20px;
+    width: 150px;
+}
+
+.wavy{
+    position: absolute;
+    display:block;
+    top:-115px;
+    left: -10px;
+    right: -10px;
+    width: 100vw;
+    height: 100vh;
+    opacity: 50%;
+}
+
+.image-wrapper{
+    position:relative;
+
 }
 
 .name{
     position: absolute;
-    top: 50%;
-    left: 35%;
+    top: 250px;
+    left: 450px;
     transform: translate(-50%, -50%);
     color: #bf897f;
     font-size: 100px;
