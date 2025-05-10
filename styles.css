@@ -6,19 +6,72 @@ body{
     background-color: #f7f1e9;
 }
 
+.container{
+    position: relative;
+    text-align: center;
+    color:#f7f1e9;
+    display: inline-block;
+}
+
 .navbar{
     top: 0;
     border-bottom: 3px solid #8c996e;
     padding:30px;
-    margin-left: -10px;
-    margin-right: -10px;
+    padding-left: 100px;
+    padding-right: 110px;
+    margin-left: -8px;
+    margin-right: -8px;
     align-items: center;
     background-color: #f7f1e9;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-element{
+    font-family:monospace;
+    font-size: 20px;
+    text-decoration: none;
+    color:#bf897f;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.navbar a:hover{
+    color: #dac2b2;
 }
 
 .cat-pic{
+    /*position: absolute;*/
     border-bottom: 3px solid #8c996e;
-    width: 100%;
-    margin-left: -10px;
-    margin-right: -100px;
+    margin-left: -8px;
+    margin-right:-10px;
+    width: 1278.5px;
+    z-index: -1;;
+}
+
+.name{
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    color: #bf897f;
+    font-size: 100px;
+    font-weight: bold;
+    z-index: 1;
+    font-family:monospace;
+    letter-spacing: 15px;
+    border-right: 5px solid #bf897f;
+    width: 61%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(11), cursor 1s step-end infinite;
+}
+
+@keyframes cursor{
+    50% { border-color: transparent}
+}
+
+@keyframes typing{
+    from { width: 0 }
 }
