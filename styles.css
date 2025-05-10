@@ -18,6 +18,7 @@ body{
 
 .cat-pic{
     border-bottom: 3px solid #8c996e;
+    width: 100%;
     margin-left: -10px;
     margin-right: -100px;
 }
