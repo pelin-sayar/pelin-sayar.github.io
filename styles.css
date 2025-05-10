@@ -18,4 +18,5 @@ body{
 .navbar{
     top: 0;
     border-bottom: 3px solid #8c996e;
+    padding:30px;
 }
