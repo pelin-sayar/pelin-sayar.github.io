@@ -16,10 +16,10 @@ body{
 
 .navbar{
     top: 0;
-    border-bottom: 3px solid #8c996e;
-    padding:15px;
-    padding-left: 100px;
-    padding-right: 110px;
+    border-bottom: 0.188rem solid #8c996e;
+    padding:0.938rem;
+    padding-left: 6.25rem;
+    padding-right: 6.875rem;
     margin-left: -8px;
     margin-right: -8px;
     align-items: center;
@@ -31,7 +31,7 @@ body{
 
 .nav-element{
     font-family:monospace;
-    font-size: 20px;
+    font-size: 1.25rem;
     text-decoration: none;
     color:#bf897f;
     font-weight: bold;
@@ -44,7 +44,7 @@ body{
 
 .cat-pic{
     position: absolute;
-    border-bottom: 3px solid #8c996e;
+    border-bottom: 0.188rem solid #8c996e;
     margin-left: -8px;
     margin-right:-10px;
     width: 100vw;
@@ -52,9 +52,9 @@ body{
 
 .stars{
     position: absolute;
-    top: 20px;
-    left:20px;
-    width: 150px;
+    top: 1.25rem;
+    left:1.25rem;
+    width: 9.375rem;
 }
 
 .wavy{
@@ -76,16 +76,16 @@ body{
 
 .name{
     position: absolute;
-    top: 250px;
-    left: 450px;
+    top: 15.625rem;
+    left: 28.125rem;
     transform: translate(-50%, -50%);
     color: #bf897f;
-    font-size: 100px;
+    font-size: 6.25rem;
     font-weight: bold;
     z-index: 1;
     font-family:monospace;
-    letter-spacing: 15px;
-    border-right: 5px solid #bf897f;
+    letter-spacing: 0.938rem;
+    border-right: 0.313rem solid #bf897f;
     width: 61%;
     white-space: nowrap;
     overflow: hidden;
