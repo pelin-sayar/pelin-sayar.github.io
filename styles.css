@@ -6,15 +6,6 @@ body{
     background-color: #f7f1e9;
 }
 
-.leaf-corner{
-    background-color: #707b6d;
-    color: #dac2bc;
-    border-radius: 15px 50px;
-    padding: 20px;
-    width: 500px;
-    height: 450px;
-}
-
 .navbar{
     top: 0;
     border-bottom: 3px solid #8c996e;
@@ -23,4 +14,8 @@ body{
     margin-right: -10px;
     align-items: center;
     background-color: #f7f1e9;
+}
+
+.cat-pic{
+    border-bottom: 3px solid #8c996e;
 }
