@@ -1,1 +1,0 @@
-# pelin-sayar.github.io
