@@ -173,6 +173,7 @@ body{
         display: flex;
         white-space: wrap;
         flex-direction: column;
+        columns: auto;
     }
 
     @keyframes cursor{
