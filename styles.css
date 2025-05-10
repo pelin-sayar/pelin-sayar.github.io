@@ -100,7 +100,7 @@ body{
     from { width: 0 }
 }
 
-/*mobile*/
+/*mobile compatibility*/
 @media (max-width: 600px) {
     head{
         background-color: #f7f1e9;
