@@ -70,6 +70,7 @@ body{
 
 .image-wrap{
     position:relative;
+    width:100vw;
 
 }
 
@@ -97,4 +98,57 @@ body{
 
 @keyframes typing{
     from { width: 0 }
+}
+
+.mobile {
+    display: none;
+}
+
+@mobile screen and (max-width: 600px) {
+    html {
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+    body {
+        margin-top: -5rem;
+        padding: 2rem;
+    }
+
+    .navbar{
+        visibility: hidden;
+        height: 0;
+    }
+    
+    .wavy{
+        display:none;
+    }
+
+    .name {
+        display: block;
+        font-size: 6.5rem;
+        margin-bottom: -2rem;
+    }
+
+    .stars{
+        display:none;
+    }
+
+    .cat-pic{
+        width: 100vw;
+        height: auto;
+    }
+    .name{
+        font-size: 50px;
+        top: 150px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .mobile {
+        display: block;
+    }
+
+    .desktop {
+        display: none;
+    }
 }
