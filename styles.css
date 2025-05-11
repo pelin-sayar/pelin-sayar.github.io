@@ -123,6 +123,7 @@ body{
     font-size: 2.5rem;
     font-family:sans-serif;
     letter-spacing: 0.3rem;
+    font-style: italic;
 }
 
 .about-text{
@@ -146,8 +147,8 @@ body{
 .quarter-wave-diff{
     width:40%;
     margin-left:50rem;
-    margin-top:2.1rem;
-    margin-bottom: -27.5rem;
+    margin-top:4.3rem;
+    margin-bottom: -26.5rem;
 }
 
 .projects{
