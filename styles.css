@@ -116,6 +116,7 @@ body{
     text-decoration-style: wavy;
     text-decoration-thickness: 0.188rem;
     text-decoration-color: #dac2b2;
+    text-shadow: #f7f2e0 0.05rem 0.05rem 0.05rem;
     padding-top: 30rem;
     margin-left:5rem;
     color: #bf897f;
