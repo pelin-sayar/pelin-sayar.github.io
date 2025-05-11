@@ -4,6 +4,8 @@ head{
 
 body{
     background-color: #f7f1e9;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 .container{
@@ -44,10 +46,12 @@ body{
 
 .cat-pic{
     position: absolute;
-    border-bottom: 0.188rem solid #8c996e;
+    border-bottom: 28rem solid #8c996e;
+    box-shadow: #3a3d3a 0px 5px 10px 0px;
+    padding-bottom: -10rem;
     margin-left: -8px;
-    margin-right:-10px;
     width: 100vw;
+    z-index: -1;;
 }
 
 .stars{
@@ -66,6 +70,7 @@ body{
     width: 100vw;
     height: 100vh;
     opacity: 50%;
+    z-index: -2;
 }
 
 .image-wrap{
@@ -98,6 +103,143 @@ body{
 
 @keyframes typing{
     from { width: 0 }
+}
+
+.section{
+    display: none;
+}
+
+.about{
+    display: block;
+    text-decoration:underline;
+    text-underline-offset: 1rem;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 0.188rem;
+    text-decoration-color: #f7f2e0;
+    padding-top: 30rem;
+    margin-left:5rem;
+    color: #dac2b2;
+    font-size: 2.5rem;
+    font-family:sans-serif;
+    letter-spacing: 0.3rem;
+}
+
+.about-text{
+    margin-left: 5rem;
+    margin-right: 5rem;
+    color: #f7f2e0;
+    font-size: 1.10rem;
+    font-family:sans-serif;
+}
+
+.about-section{
+    display: grid;
+    grid-template-columns: auto, auto;
+    gap: 2rem;
+}
+
+.projects-div{
+    display:inline-block;
+}
+
+.quarter-wave-diff{
+    width:40%;
+    margin-left:50rem;
+    margin-top:2.1rem;
+    margin-bottom: -27.5rem;
+}
+
+.projects{
+    padding-bottom: 30rem;
+    margin-left:5rem;
+    color: #bf897f;
+    font-size: 2.5rem;
+    font-family:sans-serif;
+    letter-spacing: 0.3rem;
+}
+
+.projects-text{
+    color: #dac2b2;
+    font-size: 1.10rem;
+    font-family:sans-serif;
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: auto, auto;
+    gap: 2rem;
+}
+
+.duck-1{
+    width:20%;
+    margin-left:50rem;
+    margin-bottom:-12.7rem;
+}
+
+.duck-2{
+    width:8%;
+    margin-left:62.5rem;
+    margin-bottom:-8.7rem;
+}
+
+.duck-3{
+    width:8%;
+    margin-left:67rem;
+    margin-bottom:-7.6rem;
+}
+
+.duck-4{
+    width:8%;
+    margin-left:71.4rem;
+    margin-bottom:-6.5rem;
+}
+
+.github{
+    width: 4rem;
+    margin-left:1.55rem;
+
+}
+
+.github:hover{
+    opacity: 85%;
+}
+
+.linkedin{
+    width: 3rem;
+    margin-left:1.55rem;
+}
+
+.linkedin:hover{
+    opacity: 85%;
+}
+
+.mail{
+    width: 8rem;
+    margin-left:0;
+}
+
+.mail:hover{
+    opacity: 85%;
+}
+
+.quarter-wave{
+    width: 24%;
+    margin-left: -1.25rem;
+    margin-bottom:-15.2rem;
+    z-index: 2;
+}
+
+.contact{
+    background-color: #dac2b2;
+    border-bottom:5 rem;
+    height: 15rem;
+    margin-left: -2rem;
+    margin-right: -1.5rem;
+    margin-bottom:-2rem;
+    align-items: center;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 /*mobile compatibility*/
