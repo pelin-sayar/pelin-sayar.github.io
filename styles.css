@@ -244,7 +244,7 @@ body{
     justify-content: center;
 }
 
-/*mobile compatibility*/
+/*mobile*/
 @media (max-width: 600px) {
     head{
         background-color: #f7f1e9;
