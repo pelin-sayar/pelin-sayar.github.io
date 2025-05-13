@@ -246,12 +246,16 @@ body{
 
 /*mobile*/
 @media (max-width: 600px) {
+    html{
+        overflow-x: hidden;
+    }
     head{
         background-color: #f7f1e9;
     }
 
     body{
         background-color: #f7f1e9;
+        overflow-x: hidden;
     }
 
     .container{
@@ -277,11 +281,13 @@ body{
 
     .cat-pic{
         position: absolute;
-        border-bottom: 0.188rem solid #8c996e;
+        border-bottom: 21.7rem solid #8c996e;
+        box-shadow: #3a3d3a 0px 5px 10px 0px;
         top:0;
         margin-left: -8px;
         margin-right:-10px;
         width: 100vw;
+        z-index: -1;
     }
 
     .stars{
@@ -326,5 +332,145 @@ body{
 
     @keyframes typing{
         hidden { width: 0 }
+    }
+
+    .section{
+    display: none;
+    }
+
+    .about{
+        display: block;
+        text-decoration:underline;
+        text-underline-offset: 1rem;
+        text-decoration-style: wavy;
+        text-decoration-thickness: 0.188rem;
+        text-decoration-color: #dac2b2;
+        text-shadow: #f7f2e0 0.05rem 0.05rem 0.05rem;
+        padding-top: 20%;
+        margin-left:5%;
+        color: #bf897f;
+        font-size: 2rem;
+        font-family:sans-serif;
+        letter-spacing: 0.3rem;
+        font-style: italic;
+    }
+
+    .about-text{
+        margin-left: 5%;
+        margin-right: 8%;
+        color: #f7f2e0;
+        font-size: 0.9rem;
+        font-family:sans-serif;
+    }
+
+    .about-section{
+        display: grid;
+        grid-template-columns: auto, auto;
+        gap: 2rem;
+    }
+
+    .projects-div{
+        display:inline-block;
+    }
+
+    .quarter-wave-diff{
+        width:50%;
+        margin-left: 50%;
+        margin-top:-4%;
+        margin-bottom: -40%;
+    }
+
+    .projects{
+        padding-bottom: 60%;
+        margin-left:5%;
+        color: #bf897f;
+        font-size: 2rem;
+        font-family:sans-serif;
+        letter-spacing: 0.3rem;
+    }
+
+    .projects-text{
+        color: #dac2b2;
+        font-size: 1.10rem;
+        font-family:sans-serif;
+    }
+
+    .projects{
+        display: grid;
+        grid-template-columns: auto, auto;
+        gap: 2rem;
+    }
+
+    .duck-1{
+        width:20%;
+        margin-left:20%;
+        margin-bottom:-12%;
+    }
+
+    .duck-2{
+        width:8%;
+        margin-left:62%;
+        margin-bottom:-8%;
+    }
+
+    .duck-3{
+        width:8%;
+        margin-left:67%;
+        margin-bottom:-7%;
+    }
+
+    .duck-4{
+        width:8%;
+        margin-left:71%;
+        margin-bottom:-6%;
+    }
+
+    .github{
+        width: 20%;
+        margin-left:80%;
+
+    }
+
+    .github:hover{
+        opacity: 85%;
+    }
+
+    .linkedin{
+        width: 10%;
+        margin-left:5%;
+    }
+
+    .linkedin:hover{
+        opacity: 85%;
+    }
+
+    .mail{
+        width: 30%;
+        margin-left:-130%;
+        margin-right:-50%
+    }
+
+    .mail:hover{
+        opacity: 85%;
+    }
+
+    .quarter-wave{
+        width: 16%;
+        margin-left: -1.25rem;
+        margin-bottom:-10%;
+        z-index: 2;
+    }
+
+    .contact{
+        background-color: #dac2b2;
+        border-bottom:2%;
+        height: 15%;
+        margin-left: -2rem;
+        margin-right: -1.5rem;
+        margin-bottom:-2rem;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        width: 100vw;
     }
 }
