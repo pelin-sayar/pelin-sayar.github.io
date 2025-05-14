@@ -89,12 +89,13 @@ body{
     font-weight: bold;
     z-index: 1;
     font-family:monospace;
-    letter-spacing: 0.938rem;
+    letter-spacing: 1rem;
     border-right: 0.313rem solid #bf897f;
     width: 61%;
     white-space: nowrap;
     overflow: hidden;
     animation: typing 2s steps(11), cursor 1s step-end infinite;
+    margin-right: 50rem;
 }
 
 @keyframes cursor{
@@ -233,7 +234,7 @@ body{
 
 .contact{
     background-color: #dac2b2;
-    border-bottom:5 rem;
+    border-bottom:5rem;
     height: 15rem;
     margin-left: -2rem;
     margin-right: -1.5rem;
@@ -256,6 +257,7 @@ body{
     body{
         background-color: #f7f1e9;
         overflow-x: hidden;
+        width: 100vw;
     }
 
     .container{
@@ -280,6 +282,7 @@ body{
     }
 
     .cat-pic{
+        overflow-x:hidden;
         position: absolute;
         border-bottom: 21.7rem solid #8c996e;
         box-shadow: #3a3d3a 0px 5px 10px 0px;
@@ -358,6 +361,7 @@ body{
     .about-text{
         margin-left: 5%;
         margin-right: 8%;
+        background-color: #8c996e;
         color: #f7f2e0;
         font-size: 0.9rem;
         font-family:sans-serif;
@@ -375,6 +379,7 @@ body{
 
     .quarter-wave-diff{
         width:50%;
+        right:0;
         margin-left: 50%;
         margin-top:-4%;
         margin-bottom: -40%;
@@ -403,20 +408,20 @@ body{
 
     .duck-1{
         width:20%;
-        margin-left:20%;
-        margin-bottom:-12%;
+        margin-left:50%;
+        margin-bottom:-18%;
     }
 
     .duck-2{
         width:8%;
-        margin-left:62%;
-        margin-bottom:-8%;
+        margin-left:68%;
+        margin-bottom:-18%;
     }
 
     .duck-3{
         width:8%;
-        margin-left:67%;
-        margin-bottom:-7%;
+        margin-right: 40%;
+        margin-bottom:-18%;
     }
 
     .duck-4{
@@ -426,9 +431,8 @@ body{
     }
 
     .github{
-        width: 20%;
+        width: 45%;
         margin-left:80%;
-
     }
 
     .github:hover{
@@ -436,8 +440,8 @@ body{
     }
 
     .linkedin{
-        width: 10%;
-        margin-left:5%;
+        width: 15%;
+        margin-left:60%;
     }
 
     .linkedin:hover{
@@ -445,9 +449,9 @@ body{
     }
 
     .mail{
-        width: 30%;
-        margin-left:-130%;
-        margin-right:-50%
+        width: 60%;
+        margin-left:-30%;
+        margin-right:-30%
     }
 
     .mail:hover{
