@@ -8,6 +8,21 @@ body{
     overflow-x: hidden;
 }
 
+ul{
+    list-style: none;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    align-items:center;
+    padding-left: 0.5rem;
+    padding-right: -10rem;
+}
+
+li{
+    padding-left: 10rem;
+}
+
 .container{
     position: relative;
     text-align: center;
@@ -17,9 +32,12 @@ body{
 }
 
 .navbar{
+    position:sticky;
     top: 0;
     border-bottom: 0.188rem solid #8c996e;
-    padding:0.938rem;
+    background-color: #f7f1e9;
+    color:#f7f1e9;
+    padding:0rem;
     padding-left: 6.25rem;
     padding-right: 6.875rem;
     margin-left: -8px;
@@ -29,6 +47,7 @@ body{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
+    z-index: 3;
 }
 
 .nav-element{
@@ -37,7 +56,7 @@ body{
     text-decoration: none;
     color:#bf897f;
     font-weight: bold;
-    z-index: 1;
+    z-index: 3;
 }
 
 .navbar a:hover{
@@ -104,10 +123,6 @@ body{
 
 @keyframes typing{
     from { width: 0 }
-}
-
-.section{
-    display: none;
 }
 
 .about{
