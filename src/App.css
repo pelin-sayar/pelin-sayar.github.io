@@ -332,7 +332,8 @@
   animation: pop-in 0.2s ease;
   display: flex;
   flex-direction: column;
-  transition: background 0.4s ease;
+  border: 2px solid #999;
+  transition: background 0.4s ease, border-color 0.4s ease;
   z-index: 50;
 }
 
@@ -355,6 +356,10 @@
   transition: background 0.4s ease, color 0.4s ease;
   cursor: grab;
   user-select: none;
+}
+
+.popup-header {
+  border-bottom: 2px solid #999;
 }
 
 .popup-header:active {
