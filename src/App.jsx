@@ -55,6 +55,7 @@ github: github.com/pelin-sayar`,
 
 function CommandLine({ onExit, history, setHistory }) {
   const [input, setInput] = useState('')
+  const [currentDir, setCurrentDir] = useState('root')
   const bottomRef = useRef(null)
   const inputRef = useRef(null)
 
@@ -68,26 +69,57 @@ function CommandLine({ onExit, history, setHistory }) {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    let cmd = input.trim().toLowerCase()
+    let rawInput = input.trim()
+    let cmd = rawInput.toLowerCase()
     if (!cmd) return
 
-    const newHistory = [...history, { type: 'input', text: cmd }]
+    const newHistory = [...history, { type: 'input', text: rawInput }]
 
-    cmd = cmd.replace(/^(ls|cd)\s+/, '')
+    const navItems = ['about', 'skills', 'projects', 'experience', 'contact']
 
-    if (cmd === 'clear') {
+    if (["cd..", "cd-", "cd~"].includes(cmd.replace(/\s/g, ''))) {
+      if (currentDir !== 'root') {
+        setCurrentDir('root')
+      }
+      newHistory.push({ type: 'output', text: '' })
+    }
+    else if (cmd.startsWith('cd ')) {
+      const target = cmd.slice(3).trim()
+      const isRootCmd = ["..", "-", "~"].includes(target)
+      if (currentDir === 'root') {
+        if (navItems.includes(target)) {
+          setCurrentDir(target)
+          newHistory.push({ type: 'output', text: CLI_COMMANDS[target] || '' })
+        } else if (isRootCmd) {
+          newHistory.push({ type: 'output', text: '' })
+        } else {
+          newHistory.push({ type: 'error', text: `no such directory: ${target}` })
+        }
+      } else {
+        if (isRootCmd) {
+          setCurrentDir('root')
+          newHistory.push({ type: 'output', text: '' })
+        } else if (navItems.includes(target)) {
+          newHistory.push({ type: 'error', text: 'No such file or directory' })
+        } else {
+          newHistory.push({ type: 'error', text: 'must cd .., cd -, or cd ~ to leave current directory' })
+        }
+      }
+    } else if (cmd === 'ls') {
+      if (currentDir === 'root') {
+        newHistory.push({ type: 'output', text: 'about  skills  projects  experience  contact' })
+      } else {
+        newHistory.push({ type: 'output', text: '' })
+      }
+    } else if (cmd === 'clear') {
       setHistory([{ type: 'output', text: 'Type "help" to see available commands.' }])
       setInput('')
       return
-    }
-
-    if (cmd === 'exit') {
+    } else if (cmd === 'exit') {
       setHistory([{ type: 'output', text: 'Type "help" to see available commands.' }])
       onExit()
       return
-    }
-
-    if (CLI_COMMANDS[cmd]) {
+    } else if (CLI_COMMANDS[cmd]) {
       newHistory.push({ type: 'output', text: CLI_COMMANDS[cmd] })
     } else {
       newHistory.push({ type: 'error', text: `command not found: "${cmd}". type "help" for available commands.` })
