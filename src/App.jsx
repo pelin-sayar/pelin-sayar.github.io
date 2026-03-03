@@ -15,6 +15,7 @@ import skillsIcon from './assets/skills.png'
 import aboutIcon from './assets/about.png'
 
 const CLI_COMMANDS = {
+    meow: `=^._.^=  meow`,
   help: `available commands:
   about       — learn about me
   skills      — see my technical skills
