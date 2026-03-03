@@ -99,7 +99,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* percentage-based size approximating original 800x520px */
   width: 54vw;
   max-width: 90vw;
   height: 65vh;
@@ -208,7 +207,7 @@
   width: 14vw;
   max-width: 160px;
   margin-bottom: -0.8vh;
-  margin-top: -2.2vh; /* Move up more */
+  margin-top: -2.2vh; 
   margin-left: -1vw;
 }
 
@@ -218,7 +217,7 @@
   max-height: none;
   height: auto;
   margin-bottom: -2vh;
-  margin-top: -2.9vh; /* Move up more */
+  margin-top: -2.9vh; 
   display: block;
   margin-left: -1vw;
 }
