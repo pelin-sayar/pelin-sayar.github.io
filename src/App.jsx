@@ -30,20 +30,38 @@ const CLI_COMMANDS = {
   skills: `languages: Java, Python, JavaScript, SQL (PostgreSQL, SQLite), HTML/CSS, Lean4
 frameworks: React, Node.js, Django, ROS2, Tailwind CSS, JUnit
 developer tools: AWS, Git, Docker`,
-  projects: `Pawromise — Java, Git (May 2025 - May 2025)
+  projects: `1) Uncertainty-Aware Deep Learning for Coronary Artery Anomaly Detection — Python (2026)
+Developed an uncertainty-aware U-Net framework in PyTorch to automate coronary artery anomaly detection in medical CCTA scans. Implemented a weighted cross-entropy loss and Shannon entropy flagging system to achieve a 0.65 Dice score and identify high-risk, out-of-distribution anatomical structures.
+Repo: https://github.com/pelin-sayar/mri-anomaly-detection
+Paper: https://drive.google.com/file/d/1c01rbWlI-jZbGTqJpd6b56TJ7wgNVOEX/view?usp=sharing
+
+2) Label-Lynx — React, Vite, Tailwind CSS, Firebase, Gemini API (2026)
+Created an app that scans food labels, analyzes the ingredients using US, EU, and Asian food standards, and recommends better alternatives in the selected grocery store.
+Repo: https://github.com/pelin-sayar/GDSC-Hackathon-2026
+Devpost: https://devpost.com/software/label-lynx
+
+3) Picto-Pal — React, Vite, Tailwind CSS, Firebase, Gemini API (2026)
+Created an AI photography guide that uses Gemini 2.5 to analyze composition instantly and provide real-time expert advice for HooHacks 2026 Hackathon.
+Repo: https://github.com/pelin-sayar/hoohacks-2026
+Devpost: https://devpost.com/software/picto-pal
+
+4) Pawromise — Java, Git (2025)
 Created a Java program that matches adopters with pets at animal shelters based off on their preferences - Pawromising a great match.
 Repo: https://github.com/pelin-sayar/Pawromise`,
-  experience: `1) Software Engineering Intern — Soft Edit Skin (Feb. 2026 – April 2026) — Remote
+  experience: `1) Autonomous Vehicle Software Engineer — Cavalier Autonomous Racing (Mar. 2026 – Present) — Link Lab, UVA
+  - Working on vehicle dynamic and control anti-lock braking system and motion planning backup trajectory cost function.
+
+2) Software Engineering Intern — Soft Edit Skin (Feb. 2026 – April 2026) — Remote
   - Integrated AI-driven personalized meal planning and nutrient tracking, leveraging LLMs to translate visual physiological markers into actionable dietary recommendations.
 
-2) Undergraduate Research Assistant — UVA Engineering - Department of Computer Science (Feb. 2026 – Present) — Charlottesville, VA
+3) Undergraduate Research Assistant — UVA Engineering - Department of Computer Science (Feb. 2026 – Present) — Charlottesville, VA
   - Research on software modularity & concept-based architecture
 
-3) Software Engineer — theCourseForum (Sept. 2025 – Present) — Charlottesville, VA
+4) Software Engineer — theCourseForum (Sept. 2025 – Present) — Charlottesville, VA
   - Maintaining and adding new features to a website used by 20000+ students at the University of Virginia.
   - Designed and implemented a real-time autocomplete API and search feature optimizing query latency and improving content discoverability, using Django REST Framework and PostgreSQL full-text search.
 
-4) Computer Subteam — Mechatronics and Robotics Association at the University of Virginia (Sept. 2025 – Present) — Charlottesville, VA
+5) Computer Subteam — Mechatronics and Robotics Association at the University of Virginia (Sept. 2025 – Present) — Charlottesville, VA
   - NASA Lunabotics Competition
   - Enhanced April Tag recognition to improve robot autonomy using CV, Python, and ROS2.`,
   contact: `email: pelinsayar25@gmail.com
@@ -163,14 +181,6 @@ const LINKS = [
     { name: 'gmail', icon: mailIcon, url: 'mailto:pelinsayar25@gmail.com' },
 ]
 
-const FAQS = [
-  { q: 'what software do you use?', a: 'I mainly use Clip Studio Paint for illustrations and After Effects for animations.' },
-  { q: 'are your commissions open?', a: 'Commission status is updated on my Twitter! Check my pinned tweet for the latest info.' },
-  { q: "what's your setup?", a: 'I use a Wacom Cintiq 22 with a custom-built PC running Windows 11.' },
-  { q: 'where do you get your sound effects?', a: 'Most sound effects come from Freesound.org and some are recorded by me!' },
-  { q: 'can i use your work as my icon/dp/header?', a: 'Personal, non-commercial use is fine as long as you credit me. Please do not edit or claim as your own.' },
-]
-
 function AboutPanel() {
   return (
     <div className="about-content">
@@ -234,7 +244,7 @@ function FaqPanel() {
 
 function SkillsPanel() {
   const skills = [
-    { category: 'Languages', items: ['Java', 'Python', 'JavaScript', 'SQL (PostgreSQL, SQLite)', 'HTML/CSS', 'Lean4'] },
+    { category: 'Languages', items: ['Java', 'Python', 'JavaScript', 'C++', 'SQL (PostgreSQL, SQLite)', 'HTML/CSS', 'Lean4'] },
     { category: 'Frameworks', items: ['React', 'Node.js', 'Django', 'ROS2', 'Tailwind CSS', 'JUnit'] },
     { category: 'Developer Tools', items: ['AWS', 'Git', 'Docker'] },
   ]
@@ -257,10 +267,39 @@ function SkillsPanel() {
 function ProjectsPanel() {
   const projects = [
     {
+      name: 'Uncertainty-Aware Deep Learning for Coronary Artery Anomaly Detection',
+      tech: 'Python',
+      period: '2026',
+      desc: 'Developed an uncertainty-aware U-Net framework in PyTorch to automate coronary artery anomaly detection in medical CCTA scans. Implemented a weighted cross-entropy loss and Shannon entropy flagging system to achieve a 0.65 Dice score and identify high-risk, out-of-distribution anatomical structures.',
+      devpost: null,
+      research: 'https://drive.google.com/file/d/1c01rbWlI-jZbGTqJpd6b56TJ7wgNVOEX/view?usp=sharing',
+      repo: 'https://github.com/pelin-sayar/mri-anomaly-detection',
+    },
+    {
+      name: 'Label-Lynx',
+      tech: 'React, Vite, Tailwind CSS, Firebase, Gemini API, Javascript, HTML/CSS, Git, Datasets',
+      period: '2026',
+      desc: 'Created an app that scans food labels, analyzes the ingredients using US, EU, and Asian food standards, and recommends better alternatives in the selected grocery store.',
+      devpost: 'https://devpost.com/software/label-lynx',
+      research: null,
+      repo: 'https://github.com/pelin-sayar/GDSC-Hackathon-2026',
+    },
+    {
+      name: 'Picto-Pal',
+      tech: 'React, Vite, Tailwind CSS, Firebase, Gemini API, Javascript, HTML/CSS, Git',
+      period: '2026',
+      desc: 'Created an AI photography guide that uses Gemini 2.5 to analyze composition instantly and provide real-time expert advice for HooHacks 2026 Hackathon.',
+      devpost: 'https://devpost.com/software/picto-pal',
+      research: null,
+      repo: 'https://github.com/pelin-sayar/hoohacks-2026',
+    },
+    {
       name: 'Pawromise',
       tech: 'Java, Git',
-      period: 'May 2025 - May 2025',
+      period: '2025',
       desc: 'Created a Java program that matches adopters with pets at animal shelters based off on their preferences - Pawromising a great match.',
+      devpost: null,
+      research: null,
       repo: 'https://github.com/pelin-sayar/Pawromise',
     },
   ]
@@ -277,14 +316,36 @@ function ProjectsPanel() {
               </div>
               <div className="project-right">
                 <div className="project-period">{proj.period}</div>
-                <a
-                  className="github-btn"
-                  href={proj.repo}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  GitHub
-                </a>
+                <div className="project-buttons">
+                  <a
+                    className="github-btn"
+                    href={proj.repo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    GitHub
+                  </a>
+                  {proj.research && (
+                    <a
+                      className="paper-btn"
+                      href={proj.research}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Paper
+                    </a>
+                  )}
+                  {proj.devpost && (
+                    <a
+                      className="devpost-btn"
+                      href={proj.devpost}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Devpost
+                    </a>
+                  )}
+                </div>
               </div>
             </div>
             <div className="project-desc">{proj.desc}</div>
@@ -297,6 +358,15 @@ function ProjectsPanel() {
 
 function ExperiencePanel() {
   const experiences = [
+    {
+      role: 'Autonomous Vehicle Software Engineer ',
+      company: 'Cavalier Autonomous Racing ',
+      period: 'Mar. 2026 – Present',
+      location: 'Link Lab, UVA',
+      details: [
+        'Working on vehicle dynamic and control anti-lock braking system and motion planning backup trajectory cost function.'
+      ],
+    },
     {
       role: 'Software Engineering Intern',
       company: 'Soft Edit Skin',
